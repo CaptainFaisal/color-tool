@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Converter</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .hide{
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2 class="mt-4">Color Converter</h2>
+    <p class="text">The R, G, B input takes values between 0 to 1.</p>
+    <!-- Input table 1 -->
+    <table class="table table-bordered input-table">
+      <thead class="thead-dark">
+        <tr>
+          <th>R</th>
+          <th>G</th>
+          <th>B</th>
+          <th>H</th>
+          <th>S</th>
+          <th>V</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <!-- Table for showing the generated result -->
+    <table class="table table-bordered hide result">
+      <thead>
+        <tr>
+          <th>R</th>
+          <th>G</th>
+          <th>B</th>
+          <th>H</th>
+          <th>S</th>
+          <th>V</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button class="btn btn-primary add-button mb-2" onclick="addRow(1)">Add Row</button>
+    <button class="btn btn-danger remove-button mb-2" onclick="removeRow(1)">Remove Row</button>
+    <button class="btn btn-success calculate-button mb-2" onclick="calculate(1)">Calculate</button>
+    <button class="btn btn-dark result-button mb-2" onclick="generateTable(1)">Generate Table</button>
+    <button class="btn btn-danger remove-button mb-2" onclick="removeTable(1)">Remove Table</button>
+    <!-- Input table 2 -->
+    <table class="table table-bordered input-table">
+      <thead class="thead-dark">
+        <tr>
+          <th>R</th>
+          <th>G</th>
+          <th>B</th>
+          <th>H</th>
+          <th>S</th>
+          <th>L</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <!-- Table for showing the generated result -->
+    <table class="table table-bordered hide result">
+      <thead>
+        <tr>
+          <th>R</th>
+          <th>G</th>
+          <th>B</th>
+          <th>H</th>
+          <th>S</th>
+          <th>L</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <button class="btn btn-primary add-button" onclick="addRow(2)">Add Row</button>
+    <button class="btn btn-danger remove-button" onclick="removeRow(2)">Remove Row</button>
+    <button class="btn btn-success calculate-button" onclick="calculate(2)">Calculate</button>
+    <button class="btn btn-dark result-button" onclick="generateTable(2)">Generate Table</button>
+    <button class="btn btn-danger remove-button" onclick="removeTable(2)">Remove Table</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
