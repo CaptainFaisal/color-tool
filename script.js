@@ -34,7 +34,7 @@ const calculate = (mode) => {
         console.log(R, G, B)
         const delta = Math.max(R, G, B) - Math.min(R, G, B);
         const H_prime = delta === 0 ? 0 : (R === Math.max(R, G, B) ? 60 * (((G - B) / delta) % 6) : (G === Math.max(R, G, B) ? 60 * (((B - R) / delta) + 2) : 60 * (((R - G) / delta) + 4)));
-        const H = H_prime < 0 ? H_prime+360;
+        const H = H_prime < 0 ? H_prime+360:H_prime;
         const Cmax = Math.max(R, G, B);
         const Cmin = Math.min(R, G, B);
         if(mode === 1) {
